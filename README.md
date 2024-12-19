@@ -83,6 +83,7 @@ a. Custom Actions API
    - Rasa allows you to create custom actions that you can invoke through the API. To test custom actions with Postman:
      - Create Custom Actions: In the actions.py file, you can define custom actions:
        -  ![image](https://github.com/user-attachments/assets/23f4ad16-16be-469d-a56e-fc05a7cbc31d)
+         
      -  Enable Custom Action Server: You need to run the custom action server with:
         - rasa run actions
      - Test Custom Actions: In Postman, you can trigger a custom action by sending a message that invokes the custom action defined in the domain.yml or story file.
