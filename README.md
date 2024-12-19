@@ -20,3 +20,15 @@ I have used rasa webchat (A chat widget to deploy virtual assistants made with R
 
 Rasa helps you build contextual assistants capable of having layered conversations with lots of back-and-forth. In order for a human to have a meaningful exchange with a contextual assistant, the assistant needs to be able to use context to build on things that were previously discussed – Rasa enables you to build assistants that can do this in a scalable way.
 
+# RASA installation guide
+Here’s a step-by-step guide to installing Rasa, an open-source conversational AI platform, on your system:
+
+Prerequisites:
+Before installing Rasa, ensure you have the following:
+
+Python 3.8+: Rasa requires Python 3.8 or above.
+Pip: Ensure pip (Python's package manager) is installed.
+Virtual Environment (Recommended): It’s a good idea to install Rasa in a virtual environment to avoid conflicts with other Python packages.
+
+Step 1: Install Python and Pip
+
