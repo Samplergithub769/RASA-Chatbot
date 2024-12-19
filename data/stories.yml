@@ -1,0 +1,43 @@
+version: "3.1"
+
+stories:
+
+- story: tell weather
+  steps:
+  - intent: weather
+  - action: utter_weather
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: simple_form
+  - active_loop: simple_form
+  - slot_was_set:
+    - requested_slot: name
+  - intent: inform
+    entities:
+    - name: Anu
+  - slot_was_set:
+    - name: Anu
+  - action: simple_form
+  - slot_was_set:
+    - requested_slot: city
+  - intent: inform
+    entities:
+    - city: Goa
+  - slot_was_set:
+    - city: Goa
+  - action: simple_form
+  - slot_was_set:
+    - requested_slot: phone
+  - intent: inform
+    entities:
+    - number: '756354232'
+  - slot_was_set:
+    - phone: '756354232'
+  - action: simple_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_say_data
