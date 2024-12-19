@@ -26,9 +26,9 @@ Here’s a step-by-step guide to installing Rasa, an open-source conversational 
 Prerequisites:
 Before installing Rasa, ensure you have the following:
 
-Python 3.8+: Rasa requires Python 3.8 or above.
-Pip: Ensure pip (Python's package manager) is installed.
-Virtual Environment (Recommended): It’s a good idea to install Rasa in a virtual environment to avoid conflicts with other Python packages.
+1. Python 3.8+: Rasa requires Python 3.8 or above.
+2. Pip: Ensure pip (Python's package manager) is installed.
+3. Virtual Environment (Recommended): It’s a good idea to install Rasa in a virtual environment to avoid conflicts with other Python packages.
 
 Step 1: Install Python and Pip
 
