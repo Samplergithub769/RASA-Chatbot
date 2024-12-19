@@ -37,7 +37,15 @@ Step 2: Set Up a Virtual Environment
   - python -m venv .\venv
 - Activate the virtual Environment 
   - .\venv\Scripts\activate
-  - 
+    
 Step 3: Install Rasa
+- pip install rasa
+
+Step 4: Initialize a New Rasa Project
+- rasa init
+  - This command will:
+    - Create a new folder with the default project structure (including files like domain.yml, config.yml, and data/).
+    - Provide an example chatbot that you can run immediately.
+  You will be asked if you want to train the model. Press Y (Yes) to proceed. It will also train a simple NLU model and create example stories.
 
 
