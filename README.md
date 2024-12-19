@@ -54,11 +54,10 @@ Step 6: Train the Model
   - This will train the NLU model and the dialogue management model.
  
 Step 7: Run the Rasa Server
-- After training, you can run the Rasa server to interact with your bot.To start the action server:
-  - First, run the Rasa action server if you’re using custom actions
-    - rasa run actions
-  - Then, start the Rasa bot:
-    -  rasa run(This will start the Rasa bot and you’ll be able to interact with it via the terminal.)
+- Start the Rasa server to handle interactions with the bot. You can run the Rasa server with API capabilities like this:
+- rasa run --enable-api --cors "*"
+  - --enable-api: Enables the Rasa REST API.
+  - -cors "*": Allows cross-origin requests from any domain (important when connecting from a frontend web page).
    
 Step 8: Test Your Bot
 - To test your bot directly from the command line, run:
