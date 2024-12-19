@@ -1,0 +1,85 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- inform
+- mood_great
+- mood_unhappy
+- phone
+- questions
+- repeat_phone
+- weather
+
+entities:
+- name
+- number
+- city
+slots:
+  phone:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: number
+      conditions:
+      - active_loop: simple_form
+        requested_slot: phone
+
+  city:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: city
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: name
+forms:
+  simple_form:
+    required_slots:
+    - name
+    - city
+    - phone
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_weather:
+  - text: " weather is awesome today .. "
+  utter_ask_phone:
+  - text: Can I get your phone number please ?
+  utter_ask_name:
+  - text: Hey there ! What is your good name ?
+  utter_ask_city:
+  - text: In which city do you live in ?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/11gch25.jpeg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_continue:
+  - text: Do you want to exit ?
+    buttons:
+    - title: Yes
+      payload: /affirm
+    - title: No
+      payload: /deny
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_ask_continue
+- utter_goodbye
+- action_say_data
+- validate_simple_form
