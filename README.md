@@ -49,4 +49,9 @@ Step 4: Initialize a New Rasa Project
       
    You will be asked if you want to train the model. Press Y (Yes) to proceed. It will also train a simple NLU model and create example stories.
 
+Step 6: Train the Model
+- rasa train
+  - This will train the NLU model and the dialogue management model.
+ 
+Step 7: Run the Rasa Server
 
