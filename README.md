@@ -54,9 +54,9 @@ Step 6: Train the Model
   - This will train the NLU model and the dialogue management model.
  
 Step 7: Run the Rasa Server
-After training, you can run the Rasa server to interact with your bot.To start the action server:
-- First, run the Rasa action server if you’re using custom actions
-  - rasa run actions
+- After training, you can run the Rasa server to interact with your bot.To start the action server:
+  - First, run the Rasa action server if you’re using custom actions
+    - rasa run actions
   - Then, start the Rasa bot:
     -  rasa run(This will start the Rasa bot and you’ll be able to interact with it via the terminal.)
 
