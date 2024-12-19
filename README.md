@@ -59,4 +59,9 @@ Step 7: Run the Rasa Server
     - rasa run actions
   - Then, start the Rasa bot:
     -  rasa run(This will start the Rasa bot and you’ll be able to interact with it via the terminal.)
+   
+Step 8: Test Your Bot
+- To test your bot directly from the command line, run:
+  - rasa shell
+  - You can then enter text and interact with your chatbot.
 
