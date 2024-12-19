@@ -47,6 +47,6 @@ Step 4: Initialize a New Rasa Project
     - Create a new folder with the default project structure (including files like domain.yml, config.yml, and data/).
     - Provide an example chatbot that you can run immediately.
       
-  You will be asked if you want to train the model. Press Y (Yes) to proceed. It will also train a simple NLU model and create example stories.
+   You will be asked if you want to train the model. Press Y (Yes) to proceed. It will also train a simple NLU model and create example stories.
 
 
