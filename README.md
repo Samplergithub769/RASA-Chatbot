@@ -90,7 +90,7 @@ a. Custom Actions API
        
 b. Authentication 
 - If you need to protect your Rasa bot with authentication (e.g., API tokens), you can do so by setting up authentication in the Rasa credentials.yml file. For example, using a JWT token or other security methods.
-  - ![image](https://github.com/user-attachments/assets/4f31872f-5d6f-4fc0-9605-ab9a87acbc41)
+  ![image](https://github.com/user-attachments/assets/4f31872f-5d6f-4fc0-9605-ab9a87acbc41)
 
 
 
