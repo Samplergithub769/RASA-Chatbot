@@ -76,4 +76,18 @@ a. Start the Rasa Server with API Enabled
 - If you haven't done so already, start your Rasa server with API enabled:
   - rasa run --enable-api --cors "*"
     - This opens up several REST API endpoints for interacting with your Rasa bot.
+      
+# Advanced Integration with Rasa and Postman
+a. Custom Actions API
+   - Rasa allows you to create custom actions that you can invoke through the API. To test custom actions with Postman:
+     - Create Custom Actions: In the actions.py file, you can define custom actions:
+       -  ![image](https://github.com/user-attachments/assets/23f4ad16-16be-469d-a56e-fc05a7cbc31d)
+     -  Enable Custom Action Server: You need to run the custom action server with:
+        - rasa run actions
+     - Test Custom Actions: In Postman, you can trigger a custom action by sending a message that invokes the custom action defined in the domain.yml or story file.
+b. Authentication 
+- If you need to protect your Rasa bot with authentication (e.g., API tokens), you can do so by setting up authentication in the Rasa credentials.yml file. For example, using a JWT token or other security methods.
+  - ![image](https://github.com/user-attachments/assets/4f31872f-5d6f-4fc0-9605-ab9a87acbc41)
+
+
 
