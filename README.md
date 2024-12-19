@@ -31,12 +31,13 @@ Before installing Rasa, ensure you have the following:
 3. Virtual Environment (Recommended): It’s a good idea to install Rasa in a virtual environment to avoid conflicts with other Python packages.
 
 Step 1: Install Python and Pip
+
 Step 2: Set Up a Virtual Environment 
 - Create a virtual environment
-  
-  python -m venv .\venv
-- Activate the virtual Environment
-  
-  .\venv\Scripts\activate
+  - python -m venv .\venv
+- Activate the virtual Environment 
+  - .\venv\Scripts\activate
+  - 
+Step 3: Install Rasa
 
 
