@@ -64,3 +64,16 @@ Step 8: Test Your Bot
   - rasa shell
   - You can then enter text and interact with your chatbot.
 
+ # Integrating Rasa Bot with Chatbot Widget
+ 
+ For this step, you can use the Rasa Webchat widget, which is an open-source webchat for Rasa bots. You can also integrate your bot with other chatbot widgets, but we’ll focus on Rasa Webchat here.
+
+ # Using Postman API to Interact with the Rasa Bot
+
+ Postman is a great tool for testing REST APIs. In this step, we’ll show you how to use Postman to interact with your Rasa bot via the REST API.
+
+a. Start the Rasa Server with API Enabled
+- If you haven't done so already, start your Rasa server with API enabled:
+  - rasa run --enable-api --cors "*"
+    - This opens up several REST API endpoints for interacting with your Rasa bot.
+
